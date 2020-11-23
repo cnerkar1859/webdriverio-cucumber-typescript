@@ -1,0 +1,80 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1605759574502' stop='1605759578135'>
+    <name>Featuring login: Scenario Outline name: Login with a My Vodafone  user</name>
+    <title>Featuring login: Scenario Outline name: Login with a My Vodafone  user</title>
+    <test-cases>
+        <test-case start='1605759574503' status='passed' stop='1605759574505'>
+            <name>Hook</name>
+            <title>Hook</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.193'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1605759574506' status='passed' stop='1605759578124'>
+            <name>Given I am on the login page</name>
+            <title>Given I am on the login page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.193'/>
+            </parameters>
+            <steps>
+                <step start='1605759574509' status='passed' stop='1605759578111'>
+                    <name>GET /session/:sessionId/title</name>
+                    <title>GET /session/:sessionId/title</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Response' source='9e23558d-2684-4720-a8b5-25480c3c59b1-attachment.json' type='application/json' size='61'/>
+            </attachments>
+        </test-case>
+        <test-case start='1605759578124' status='broken' stop='1605759578134'>
+            <name>When I Login in with My Vodafone user</name>
+            <title>When I Login in with My Vodafone user</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.193'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Cannot read property 'doSetValue' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'doSetValue' of undefined
+                    at LoginPage.doLogin (C:\Users\nerkarc\Documents\WDIO-App-Pom_Framework\src\pages\LoginPage.ts:33:17)
+                    at World.&lt;anonymous> (C:\Users\nerkarc\Documents\WDIO-App-Pom_Framework\src\step-definitions\loginStep.ts:32:13)
+                    at World.executeAsync (C:\Users\nerkarc\Documents\WDIO-App-Pom_Framework\node_modules\@wdio\utils\build\shim.js:96:25)
+                    at World.exports.testFrameworkFnWrapper (C:\Users\nerkarc\Documents\WDIO-App-Pom_Framework\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:18:32)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1605759578134' status='passed' stop='1605759578135'>
+            <name>Hook</name>
+            <title>Hook</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.193'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

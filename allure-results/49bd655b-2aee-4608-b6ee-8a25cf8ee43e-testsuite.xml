@@ -1,0 +1,81 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1605756617854' stop='1605756621769'>
+    <name>Featuring login: Scenario Outline name: Login with a My Vodafone  user</name>
+    <title>Featuring login: Scenario Outline name: Login with a My Vodafone  user</title>
+    <test-cases>
+        <test-case start='1605756617856' status='passed' stop='1605756617857'>
+            <name>Hook</name>
+            <title>Hook</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.193'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1605756617858' status='passed' stop='1605756621749'>
+            <name>Given I am on the login page</name>
+            <title>Given I am on the login page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.193'/>
+            </parameters>
+            <steps>
+                <step start='1605756617862' status='passed' stop='1605756621731'>
+                    <name>GET /session/:sessionId/title</name>
+                    <title>GET /session/:sessionId/title</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Response' source='0b60d358-d26e-4757-8d1a-42539730f39d-attachment.json' type='application/json' size='61'/>
+            </attachments>
+        </test-case>
+        <test-case start='1605756621750' status='broken' stop='1605756621765'>
+            <name>When I Login in with My Vodafone "5.7pvt@grr.la" and "password1"</name>
+            <title>When I Login in with My Vodafone "5.7pvt@grr.la" and "password1"</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.193'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>element.waitForDisplayed is not a function</message>
+                <stack-trace>TypeError: element.waitForDisplayed is not a function
+                    at elementUtil.doSetValue (C:\Users\nerkarc\Documents\WDIO-App-Pom_Framework\src\util\elementUtil.ts:14:13)
+                    at LoginPage.doLogin (C:\Users\nerkarc\Documents\WDIO-App-Pom_Framework\src\pages\LoginPage.ts:27:17)
+                    at World.&lt;anonymous> (C:\Users\nerkarc\Documents\WDIO-App-Pom_Framework\src\step-definitions\loginStep.ts:25:15)
+                    at World.executeAsync (C:\Users\nerkarc\Documents\WDIO-App-Pom_Framework\node_modules\@wdio\utils\build\shim.js:96:25)
+                    at World.exports.testFrameworkFnWrapper (C:\Users\nerkarc\Documents\WDIO-App-Pom_Framework\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:18:32)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1605756621766' status='passed' stop='1605756621768'>
+            <name>Hook</name>
+            <title>Hook</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.193'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

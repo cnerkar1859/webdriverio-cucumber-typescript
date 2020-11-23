@@ -1,0 +1,80 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1605755134775' stop='1605755139186'>
+    <name>Featuring login: Scenario Outline name: Login with a My Vodafone  user</name>
+    <title>Featuring login: Scenario Outline name: Login with a My Vodafone  user</title>
+    <test-cases>
+        <test-case start='1605755134777' status='passed' stop='1605755134781'>
+            <name>Hook</name>
+            <title>Hook</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.193'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1605755134782' status='passed' stop='1605755139167'>
+            <name>Given I am on the login page</name>
+            <title>Given I am on the login page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.193'/>
+            </parameters>
+            <steps>
+                <step start='1605755134785' status='passed' stop='1605755139149'>
+                    <name>GET /session/:sessionId/title</name>
+                    <title>GET /session/:sessionId/title</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Response' source='2d16e21a-0e8f-409a-a582-57a1f615233d-attachment.json' type='application/json' size='61'/>
+            </attachments>
+        </test-case>
+        <test-case start='1605755139167' status='broken' stop='1605755139183'>
+            <name>When I Login in with My Vodafone "5.7pvt@grr.la" and "password1"</name>
+            <title>When I Login in with My Vodafone "5.7pvt@grr.la" and "password1"</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.193'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>elementUtil.doSetValue is not a function</message>
+                <stack-trace>TypeError: elementUtil.doSetValue is not a function
+                    at LoginPage.doLogin (C:\Users\nerkarc\Documents\WDIO-App-Pom_Framework\src\pages\LoginPage.ts:27:17)
+                    at World.&lt;anonymous> (C:\Users\nerkarc\Documents\WDIO-App-Pom_Framework\src\step-definitions\loginStep.ts:25:15)
+                    at World.executeAsync (C:\Users\nerkarc\Documents\WDIO-App-Pom_Framework\node_modules\@wdio\utils\build\shim.js:96:25)
+                    at World.exports.testFrameworkFnWrapper (C:\Users\nerkarc\Documents\WDIO-App-Pom_Framework\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:18:32)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1605755139184' status='passed' stop='1605755139186'>
+            <name>Hook</name>
+            <title>Hook</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.193'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

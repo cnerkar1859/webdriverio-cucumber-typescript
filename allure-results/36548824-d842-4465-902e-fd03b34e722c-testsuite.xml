@@ -1,0 +1,66 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1605751928377' stop='1605751932649'>
+    <name>Featuring login: Login Page</name>
+    <title>Featuring login: Login Page</title>
+    <test-cases>
+        <test-case start='1605751928379' status='passed' stop='1605751928382'>
+            <name>Hook</name>
+            <title>Hook</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.193'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1605751928383' status='failed' stop='1605751932648'>
+            <name>Given I am on the login page</name>
+            <title>Given I am on the login page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.193'/>
+            </parameters>
+            <steps>
+                <step start='1605751928386' status='passed' stop='1605751932624'>
+                    <name>GET /session/:sessionId/title</name>
+                    <title>GET /session/:sessionId/title</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Response' source='a013a092-cb5e-44cb-afdf-d5f7cdd7252f-attachment.json' type='application/json' size='61'/>
+            </attachments>
+            <failure>
+                <message>expected 'For fast broadband and the best mobile phones - Vodafone NZ' to equal '1For fast broadband and the best mobile phones - Vodafone NZ'</message>
+                <stack-trace>AssertionError: expected 'For fast broadband and the best mobile phones - Vodafone NZ' to equal '1For fast broadband and the best mobile phones - Vodafone NZ'
+                    at C:\Users\nerkarc\Documents\WDIO-App-Pom_Framework\src\step-definitions\loginStep.ts:79:20
+                    at Generator.next (&lt;anonymous>)
+                    at fulfilled (C:\Users\nerkarc\Documents\WDIO-App-Pom_Framework\src\step-definitions\loginStep.ts:5:58)
+                    at processTicksAndRejections (internal/process/task_queues.js:93:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1605751932648' status='passed' stop='1605751932649'>
+            <name>Hook</name>
+            <title>Hook</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.193'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

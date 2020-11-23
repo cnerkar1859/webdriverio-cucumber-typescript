@@ -1,0 +1,63 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1605749419110' stop='1605749419130'>
+    <name>Featuring login: Login Page</name>
+    <title>Featuring login: Login Page</title>
+    <test-cases>
+        <test-case start='1605749419112' status='passed' stop='1605749419114'>
+            <name>Hook</name>
+            <title>Hook</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.193'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1605749419115' status='failed' stop='1605749419127'>
+            <name>Given I am on the login page</name>
+            <title>Given I am on the login page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.193'/>
+            </parameters>
+            <steps>
+                <step start='1605749419118' status='failed' stop='1605749419127'>
+                    <name>GET /session/:sessionId/title</name>
+                    <title>GET /session/:sessionId/title</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>expected {} to deeply equal 'Vodafone'</message>
+                <stack-trace>AssertionError: expected {} to deeply equal 'Vodafone'
+                    at World.&lt;anonymous> (C:\Users\nerkarc\Documents\WDIO-App-Pom_Framework\src\step-definitions\loginStep.ts:75:33)
+                    at World.executeAsync (C:\Users\nerkarc\Documents\WDIO-App-Pom_Framework\node_modules\@wdio\utils\build\shim.js:96:25)
+                    at World.exports.testFrameworkFnWrapper (C:\Users\nerkarc\Documents\WDIO-App-Pom_Framework\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:18:32)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1605749419128' status='passed' stop='1605749419129'>
+            <name>Hook</name>
+            <title>Hook</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.193'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

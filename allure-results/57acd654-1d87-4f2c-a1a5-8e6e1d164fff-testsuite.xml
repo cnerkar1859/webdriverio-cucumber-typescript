@@ -1,0 +1,80 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1605760211838' stop='1605760215487'>
+    <name>Featuring login: Login with a My Vodafone  user</name>
+    <title>Featuring login: Login with a My Vodafone  user</title>
+    <test-cases>
+        <test-case start='1605760211839' status='passed' stop='1605760211842'>
+            <name>Hook</name>
+            <title>Hook</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.193'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1605760211842' status='passed' stop='1605760215476'>
+            <name>Given I am on the login page</name>
+            <title>Given I am on the login page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.193'/>
+            </parameters>
+            <steps>
+                <step start='1605760211844' status='passed' stop='1605760215463'>
+                    <name>GET /session/:sessionId/title</name>
+                    <title>GET /session/:sessionId/title</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Response' source='8f38be9f-99df-4c39-b22e-57f637e6fa5a-attachment.json' type='application/json' size='61'/>
+            </attachments>
+        </test-case>
+        <test-case start='1605760215477' status='broken' stop='1605760215485'>
+            <name>When I Login in with My Vodafone user</name>
+            <title>When I Login in with My Vodafone user</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.193'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>driver.setValueImmediate is not a function</message>
+                <stack-trace>TypeError: driver.setValueImmediate is not a function
+                    at LoginPage.doLogin (C:\Users\nerkarc\Documents\WDIO-App-Pom_Framework\src\pages\LoginPage.ts:34:12)
+                    at World.&lt;anonymous> (C:\Users\nerkarc\Documents\WDIO-App-Pom_Framework\src\step-definitions\loginStep.ts:32:13)
+                    at World.executeAsync (C:\Users\nerkarc\Documents\WDIO-App-Pom_Framework\node_modules\@wdio\utils\build\shim.js:96:25)
+                    at World.exports.testFrameworkFnWrapper (C:\Users\nerkarc\Documents\WDIO-App-Pom_Framework\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:18:32)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1605760215485' status='passed' stop='1605760215486'>
+            <name>Hook</name>
+            <title>Hook</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-86.0.4240.193'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

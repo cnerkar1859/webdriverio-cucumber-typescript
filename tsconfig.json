@@ -1,0 +1,27 @@
+{
+    "extends": "@tsconfig/node12/tsconfig.json",
+    "compilerOptions": {
+      "lib": ["es2019", "es2020.promise", "es2020.bigint", "es2020.string"],
+      "target": "es6",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "removeComments": true,
+      "noImplicitAny": false,
+      "outDir": "tsrc/",
+      "types": ["node", "@wdio/sync", "@wdio/cucumber-framework"],
+      "typeRoots": ["./types", "./node_modules/@types"],
+    },
+    "exclude": [
+      "node_modules",
+    ],
+
+    "include":[
+      // "test/*.ts", "test/login.page.ts",
+      "./src/**/*.ts", "src/pages/LoginPage.ts"
+    ],
+
+    "compileOnSave": false
+    
+  }
